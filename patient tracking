@@ -1,0 +1,295 @@
+Here is an example of a Software Requirements Specification (SRS) document for a patient who has been hacked:
+
+    1.Introduction
+    The Patient Hacked Recovery System is a web-based application designed to assist patients who have been hacked or had their personal information stolen. 
+    The system will be used by patients to report the hacking incident, recover their stolen data, and prevent future attacks.
+
+    2.General Requirements
+    2.1 Functional Requirements:-
+    The following functions should be provided by the Patient Hacked Recovery System:
+
+ 2.1.1 Reporting: The system should allow patients to report the hacking incident and provide details of the stolen data.
+ 2.1.2 Data Recovery: The system should provide a mechanism to recover stolen data, such as credit card information, social security numbers, and medical records.
+ 2.1.3 Communication: The system should provide a communication channel between the patient and the support team to provide updates and receive guidance.
+ 2.1.4 Security Enhancement: The system should provide security enhancements to prevent future hacking incidents.
+
+2.2 Non-functional Requirements:-
+The following non-functional requirements should be met by the system:
+
+2.2.1 Security: The system should have proper security measures to protect patient data from further attacks.
+2.2.2 Performance: The system should be fast and responsive to user inputs, even during peak hours.
+2.2.3 Availability: The system should be available 24/7 and have minimal downtime for maintenance.
+2.2.4 Usability: The system should be easy to use and navigate for all users, even those with limited technical expertise.
+
+1.System Architecture:
+The system will be a web-based application built on a three-tier architecture. The front-end will be developed using HTML, CSS, and JavaScript, 
+and the back-end will be developed using PHP and MySQL database.
+
+2.User Interface:
+The user interface should be designed to be simple and intuitive for all users. It should have appropriate features for user authentication and authorization.
+
+3.Data Management:
+The Patient Hacked Recovery System should use a MySQL database to store and manage patient data, including stolen data, recovery information, and communication 
+records. Appropriate measures should be taken to ensure data integrity and confidentiality.
+
+4.System Maintenance and Support:
+The system should have appropriate documentation, training materials, and user manuals for all users. The system should be maintained and supported by a dedicated 
+IT team.
+
+5.Conclusion:
+The Patient Hacked Recovery System is a critical tool for patients who have suffered from hacking incidents. It should meet all the functional and 
+non-functional requirements outlined in this SRS document and be user-friendly, secure, and reliable.
+he system should provide patients with the necessary tools and resources to report the hacking incident, recover stolen data, and prevent future 
+attacks. The Patient Hacked Recovery System should also have appropriate security measures to protect patient data from further hacking incidents.
+
+2.System Requirements:-
+8.1 Hardware Requirements:
+The Patient Hacked Recovery System should be compatible with a range of devices, including desktop computers, laptops, tablets, and smartphones. 
+The minimum hardware requirements are:
+
+    *Processor: 1 GHz or higher
+    *Memory: 2 GB RAM
+    *Storage: 500 MB free disk space
+    *Display: 1024x768 resolution or higher
+    *Internet Connection: Broadband or high-speed internet
+
+8.2 Software Requirements:-
+The Patient Hacked Recovery System should be compatible with a range of web browsers, including Google Chrome, Mozilla Firefox, 
+Apple Safari, and Microsoft Edge. The minimum software requirements are:
+
+    *Operating System: Windows 7 or higher, macOS 10.9 or higher, iOS 11 or higher, Android 5.0 or higher
+    *Web Browser: Latest version of Google Chrome, Mozilla Firefox, Apple Safari, or Microsoft Edge
+    *Additional Software: Adobe Acrobat Reader to view PDF files
+
+ 1.System Constraints:-
+    The Patient Hacked Recovery System may face the following constraints:
+
+ * Third-party integrations: The system may need to integrate with other systems, such as insurance providers, credit bureaus, and law enforcement agencies, 
+  to provide a comprehensive solution.
+ * Data privacy regulations: The system should comply with data privacy regulations, such as HIPAA, GDPR, and CCPA, to protect patient data.
+ * Budget: The development, maintenance, and support of the system may require a significant budget.v
+
+ 1.Glossary
+    The following terms are used in this document:
+
+    * Hacking: The unauthorized access to a computer system or network to steal data or disrupt normal operations.
+    * Stolen Data: Personal information, such as social security numbers, credit card numbers, and medical records, that have been stolen by hackers.
+    * Recovery: The process of restoring stolen data to the patient.
+    * Security Enhancements: Measures taken to improve the security of the system and prevent future hacking incidents.
+
+UML Diagrams for Patient Hacking:
+Use case diagrams.
+
+Here are some example use case diagrams for the Patient Hacking Recovery System:
+
+    Reporting Use Case Diagram:
+
++----------------------------------------+
+|           Patient Reporting            |
++----------------------------------------+
+|                                        |
+| + Report Hacking Incident              |
+| + Provide Details of Stolen Data       |
+|                                        |
++----------------------------------------+
+
+
+   Data Recovery Use Case Diagram:
+
++----------------------------------------+
+|            Data Recovery               |
++----------------------------------------+
+|                                        |
+| + Request Recovery of Stolen Data      |
+| + Provide Verification Information     |
+| + Receive Recovered Data               |
+|                                        |
++----------------------------------------+
+
+
+  Communication Use Case Diagram:
+
++----------------------------------------+
+|            Communication               |
++----------------------------------------+
+|                                        |
+| + Receive Guidance                     |
+| + Provide Updates                      |
+| + Send Messages                        |
+|                                        |
++----------------------------------------+
+
+
+  Security Enhancement Use Case Diagram:
+
+sql
++----------------------------------------+
+|        Security Enhancement            |
++----------------------------------------+
+|                                        |
+| + Set Security Preferences             |
+| + Enable Two-Factor Authentication     |
+| + Receive Security Alerts              |
+|                                        |
++----------------------------------------+
+
+
+These are just examples and not an exhaustive list of use cases. The actual use cases may vary based on the 
+specific requirements and functionalities of the Patient Hacking Recovery System.
+
+
+->Class diagrams
+
+Here are some example class diagrams for the Patient Hacking Recovery System:
+
+   Patient class diagram:
+
+lua
++----------------------------------------+
+|                 Patient                |
++----------------------------------------+
+| - id: string                           |
+| - name: string                         |
+| - email: string                        |
+| - phone: string                        |
+| - address: string                      |
+| - medicalHistory: string               |
+| - socialSecurityNumber: string         |
+| - creditCardNumber: string             |
++----------------------------------------+
+| + reportHackingIncident()              |
+| + requestDataRecovery()                |
+| + updateContactInfo()                  |
+| + updateSecurityInfo()                 |
+|                                        |
++----------------------------------------+
+
+
+   Data Recovery Class Diagram:
+
+lua
++----------------------------------------+
+|            Data Recovery               |
++----------------------------------------+
+| - patientId: string                    |
+| - verificationInfo: string             |
++----------------------------------------+
+| + requestDataRecovery()                |
+| + verifyIdentity()                     |
+| + recoverData()                        |
+|                                        |
++----------------------------------------+
+
+
+    Security Class Diagram:
+
+lua
++----------------------------------------+
+|                Security                |
++----------------------------------------+
+| - patientId: string                    |
+| - username: string                     |
+| - password: string                     |
+| - twoFactorAuth: boolean               |
++----------------------------------------+
+| + setSecurityPreferences()             |
+| + enableTwoFactorAuthentication()      |
+| + disableTwoFactorAuthentication()     |
+| + receiveSecurityAlerts()              |
+|                                        |
++----------------------------------------+
+
+These are just examples and not an exhaustive list of classes. The actual classes may vary based on the specific 
+requirements and functionalities of the Patient Hacking Recovery System.
+
+
+->Sequence diagrams:
+
+Here are some example sequence diagrams for the Patient Hacking Recovery System:
+
+    Reporting Sequence Diagram:
+
+sql
++----------------------------------------+
+|           Reporting Sequence           |
++----------------------------------------+
+|                                        |
+|   Patient          System              |
+|      |                 |               |
+| +reportHackingIncident()               |
+|      |---------------->                |
+|      |                 |               |
+|      |        Display Reporting Form   |
+|      |<----------------|               |
+|      |                 |               |
+|   Patient           System             |
+|      |         Provide Stolen Data     |
+|      |---------------->                |
+|      |                 |               |
+|      |   Verify and Record Incident    |
+|      |<----------------|               |
+|      |                 |               |
+|   Patient           System             |
+|      |         Display Confirmation    |
+|      |<----------------|               |
+|      |                 |               |
++----------------------------------------+
+
+
+    Data Recovery Sequence Diagram:
+
+sql
++----------------------------------------+
+|         Data Recovery Sequence         |
++----------------------------------------+
+|                                        |
+|   Patient          System              |
+|      |                 |               |
+|  +requestDataRecovery()                |
+|      |---------------->                |
+|      |                 |               |
+|   Patient          System              |
+|      |     Provide Verification Info   |
+|      |---------------->                |
+|      |                 |               |
+|      |        Verify Identity          |
+|      |<----------------|               |
+|      |                 |               |
+|   Patient          System              |
+|      |           Recover Data          |
+|      |<----------------|               |
+|      |                 |               |
++----------------------------------------+
+
+
+    Security Enhancement Sequence Diagram:
+
+sql
++----------------------------------------+
+|     Security Enhancement Sequence      |
++----------------------------------------+
+|                                        |
+|   Patient          System              |
+|      |                 |               |
+| +setSecurityPreferences()              |
+|      |---------------->                |
+|      |                 |               |
+|   Patient          System              |
+|      |  Enable Two-Factor Authentication|
+|      |---------------->                |
+|      |                 |               |
+|   Patient          System              |
+|      |        Receive Security Alert   |
+|      |<----------------|               |
+|      |                 |               |
++----------------------------------------+
+
+
+These are just examples and not an exhaustive list of sequence diagrams. The actual sequence diagrams may vary based 
+on the specific requirements and functionalities of the Patient Hacking Recovery System.
+
+
+
+
+
+
